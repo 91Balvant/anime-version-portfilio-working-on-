@@ -56,18 +56,19 @@ nav {
 }
 
 nav ul {
+    gap: 2vw;
     box-shadow: 1px 0px 2px inset;
     justify-content: center;
     display: flex;
     align-items: center;
     margin: 0;
     padding: 2px 0;
-    gap: 2vw;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
 li a {
+
     border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
     text-decoration: none;
@@ -153,6 +154,7 @@ i {
         font-size: 1.1rem;
     }
     
+    
 }
 @media screen and (max-width:570px) {
    nav, ul{
@@ -162,11 +164,10 @@ i {
         font-size: 1.1rem;
     }
     
+    
 }
 @media screen and (max-width:465px) {
-    ul{
-        gap: 0px;
-    }
+   
     ul li a{
         padding: 0.5 0;
         font-size: 0.8rem;
@@ -175,15 +176,29 @@ i {
         font-size: 1rem;
     }
 }
-@media screen and (max-width:410px) {
-    ul{
-        gap: 0px;
-    }
-    ul li a{
-        padding: 0.5 0;
-        font-size: 0.7rem;
-    }
-    footer h3{
-        font-size: 0.8rem;
-    }
+
+@media screen and (max-width:412px) {
+   
+   ul li a{
+    display: grid;
+    grid-template-columns: repeat(4, auto-fit);
+    padding: 0.4rem 0.7rem;
+   }
+  
+   ul li{
+    margin: 0;
+}
+
+
+}
+@media screen and (max-width:326px) {
+   
+   ul li a{
+    padding: 0.3rem 0.5rem;
+    
+   }
+  
+   ul li{
+    margin: 0 auto;
+}
 }
